@@ -2,10 +2,10 @@
 #include "train.h"
 
 void Train::addCage(bool light) {
-  if (first == NULL) {
+  if (first == nullptr) {
     first = new Cage;
     first->light = light;
-    first->next = NULL;
+    first->next = nullptr;
     first->prev = first->next;
     last = first;
   } else {
@@ -13,7 +13,7 @@ void Train::addCage(bool light) {
     Cage* prov = new Cage;
     prov->light = light;
     last->next = prov;
-    prov->next = NULL;
+    prov->next = nullptr;
     prov->prev = last;
     last = last->next;
     }
