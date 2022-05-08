@@ -3,14 +3,14 @@
 
 void Train::addCage(bool light) {
   if (first == nullptr) {
-    first = new Cage;
+    first = new Cage();
     first->light = light;
     first->next = nullptr;
     first->prev = first->next;
     last = first;
   } else {
     //prov-first совпадает с last
-    Cage* prov = new Cage;
+    Cage* prov = new Cage();
     prov->light = light;
     last->next = prov;
     prov->next = nullptr;
@@ -24,7 +24,7 @@ int Train::getLength() {
   first->prev = last;
   first->light = true;
   size = 1;
-  Cage* carriage = new Cage;
+  Cage* carriage = new Cage();
   carriage = carriage->next;
   while (true) {
     countOp++;
