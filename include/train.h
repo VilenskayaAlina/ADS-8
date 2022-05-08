@@ -15,8 +15,8 @@ class Train {
   Cage* last; //последний вагон(в случае совпадения с первым-счетчик верен)
  public:
   Train():first(NULL), last(NULL) {}
-   void addCage(bool light); // добавить вагон с начальным состоянием лампочки
-   int getLength();          // вычислить длину поезда
-   int getOpCount();         // вернуть число переходов (из вагона в вагон)
+  void addCage(bool light); // добавить вагон с начальным состоянием лампочки
+  int getLength();          // вычислить длину поезда
+  int getOpCount();         // вернуть число переходов (из вагона в вагон)
 };
 #endif  // INCLUDE_TRAIN_H_
