@@ -25,7 +25,7 @@ int Train::getLength() {
   first->light = true;
   size = 1;
   Cage* carriage = new Cage();
-  carriage = carriage->next;
+  carriage = first->next;
   while (true) {
     countOp++;
     if (carriage->light != true) {
